@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.*;
         }
 
         //Handles request of the form /hello?name=LaunchCode
-        @GetMapping("hello")
-        @PostMapping("hello")
+        //@GetMapping("hello")
+        //@PostMapping("hello")
         @RequestMapping(value="hello", method = {RequestMethod.GET, RequestMethod.POST})
         @ResponseBody
         public String helloWithQueryParam(@RequestParam String name) {
